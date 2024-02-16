@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Form</title>
+    <style>
+        
+
+        body {
+            background-color: lightblue;
+            }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+        }
+        .container form {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+        }
+        .container form table {
+            flex: .75;
+        }
+        .container form h2 {
+            flex: .25;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="radio"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="bank.php" method="post"> <!-- Form with action set to bank.php and method set to post -->
+            <br><br><br><br>
+            <h2>Bank Account Information</h2>
+            <table>
+                <!-- Bank Account Information Fields -->
+                <tr>
+                    <td>
+                        <label for="B_ID">Bank ID (Continuous):</label>
+                    </td>
+                    <td>
+                        <input type="number" name="B_ID" required step="1"> <!-- Input field for Bank ID -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="B_Name">Bank Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="B_Name" required> <!-- Input field for Bank Name -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="IFSC">IFSC:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="IFSC" required> <!-- Input field for IFSC -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Branch">Branch:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Branch" required> <!-- Input field for Branch -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="B_Add">Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="B_Add" required> <!-- Input field for Address -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="MICR">MICR:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="MICR" required > <!-- Input field for MICR -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ACC_NO">Account Number:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="ACC_NO" required> <!-- Input field for Account Number -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ACC_NAME">Account Holder Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="ACC_NAME" required> <!-- Input field for Account Holder Name -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ACC_Type">Account Type:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="ACC_Type" value="SB" required> Savings Bank<br> <!-- Radio buttons for Account Type -->
+                        <input type="radio" name="ACC_Type" value="CA" required> Current Account<br>
+                        <input type="radio" name="ACC_Type" value="Others" required> Others<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;width: 100%;">
+                        <input type="submit" value="Submit"> <!-- Submit button -->
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

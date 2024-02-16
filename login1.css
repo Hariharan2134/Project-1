@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    width: 100%; height: 25px; background-color: white; border: 2px solid black; color: black; cursor: pointer; margin: 0px;
+}
+input[type="submit"]:hover {
+    background-color: blue;
+    color: white;
+}
+input[type="text"], input[type="password"] {
+    padding: 0 5px;
+    margin: 0 -5px;
+}
+input {
+    background-color: white;
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    height: 25px;
+}
+
+table tr, table td{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}

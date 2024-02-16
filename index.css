@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Segoe UI';
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head h1 {
+    flex: .6;
+    font-size: 28px;
+}
+
+ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    flex: .40;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+li {
+    list-style: none;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.foot {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}

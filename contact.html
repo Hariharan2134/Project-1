@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <form action="process_form.php" method="post">
+            <br><br><br><br>
+            <h2>Contact Information</h2>
+                <table>
+                <tr>
+                    <td>
+                        <label for="C_ID">Contact ID:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="C_ID" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="C_Name">Contact Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="C_Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="C_Type">Contact Type:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="C_Type" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="C_Notes">Contact Notes:</label>
+                    </td>
+                    <td>
+                        <textarea name="C_Notes"></textarea>
+                    </td>
+                </tr>
+                </table>
+                <br><br>
+                <h2>Contact Details</h2>
+                <table>
+                <tr>
+                    <td>
+                        <label for="Cd_no">Cd_no:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Cd_no" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="C_Field">Field Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="C_Field" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="C_Values">Field Value:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="C_Values" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;width: 100%;">
+                        <input type="submit" value="Submit" style="width: 100%; padding: 3px 0; margin-top: 7px;">
+                    </td>
+                </tr>
+            </table>
+            </form>
+    </div>
+</body>
+</html>

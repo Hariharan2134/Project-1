@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheque Transaction Form</title>
+    <link rel="stylesheet" href="cheque_Css.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2 style="display: flex; align-items: center; justify-content: center; height: 100vh;">Cheque Transaction Information</h2>
+        <form action="process_cheque.php" method="post">
+            <label for="ch_no">Cheque Number:</label>
+            <input type="text" name="ch_no" id="ch_no" required><br><br>
+
+            <label for="ch_rdate">Cheque Received Date:</label>
+            <input type="date" name="ch_rdate" id="ch_rdate" required><br><br>
+
+            <label for="ch_name">Contact Name:</label>
+            <input type="text" name="ch_name" id="ch_name" required><br><br>
+
+           <!--- <label for="bno">Bank Number:</label>
+            <input type="number" name="bno" id="bno" required><br><br>-->
+
+            <label for="ch_date">Cheque Date:</label>
+            <input type="date" name="ch_date" id="ch_date" required><br><br>
+
+            <label for="ch_amt">Amount:</label>
+            <input type="number" name="ch_amt" id="ch_amt" step="0.01" required><br><br>
+
+            <label for="b_date">Date Deposited at Bank:</label>
+            <input type="date" name="b_date" id="b_date" required><br><br>
+
+            <label for="ch_status">Cheque Status:</label>
+            <select name="ch_status" id="ch_status" required>
+                <option value="received">Received</option>
+                <option value="deposited">Deposited</option>
+                <option value="cleared">Cleared</option>
+                <option value="returned">Returned</option>
+                <option value="represented">Represented</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
